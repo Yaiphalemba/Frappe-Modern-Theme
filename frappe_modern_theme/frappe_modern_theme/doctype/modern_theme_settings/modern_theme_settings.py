@@ -9,10 +9,11 @@ class ModernThemeSettings(Document):
 	pass
 
 
+@frappe.whitelist()
 def get_settings():
 	doc = frappe.get_single("Modern Theme Settings")
 	return {
-	"light_bg": doc.light_bg,
-	"dark_bg": doc.dark_bg,
-	"enable": bool(doc.enable_wallpaper)
+		"light_bg": doc.light_bg,
+		"dark_bg": doc.dark_bg,
+		"enable": bool(doc.enable_wallpaper)
 	}

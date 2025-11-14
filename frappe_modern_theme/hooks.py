@@ -180,9 +180,9 @@ app_include_js = "/assets/frappe_modern_theme/js/modern_theme.js"
 # 	"frappe.desk.doctype.event.event.get_events": "frappe_modern_theme.event.get_events"
 # }
 
-override_whitelisted_methods = {
-"frappe_modern_theme.api.get_theme_settings": "frappe_modern_theme.doctype.modern_theme_settings.modern_theme_settings.get_settings"
-}
+# override_whitelisted_methods = {
+#     "frappe_modern_theme.api.get_theme_settings": "frappe_modern_theme.frappe_modern_theme.doctype.modern_theme_settings.modern_theme_settings.get_settings"
+# }
 
 #
 # each overriding function accepts a `data` argument;
