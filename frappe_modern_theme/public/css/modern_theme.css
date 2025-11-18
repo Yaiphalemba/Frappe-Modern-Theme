@@ -47,7 +47,6 @@
   .control,
   .graph-svg-tip,
   .svg-pointer,
-  .dropdown-menu
 
   /* Components */
   .card,
@@ -66,6 +65,11 @@
     background-color: var(--card-bg) !important;
     background: var(--card-bg) !important;
   }
+
+  .dropdown-menu {
+    background-color: var(--card-bg) !important;
+  }
+  
   .ql-container .ql-editor {
     background-color: var(--hover-bg) !important;
   }
@@ -109,7 +113,6 @@
   .widget:hover,
   .list-group-item:hover,
   .dropdown-item:hover,
-  .btn:hover,
   .desk-sidebar-item:hover,
   .recent-item:hover,
   .awesomplete ul li:hover {
