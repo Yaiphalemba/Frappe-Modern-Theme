@@ -2,14 +2,14 @@
 :root[data-theme="light"] {
 
   /* Override Frappe theme variables */
-  --bg-color: #F7F3FA !important;
-  --card-bg: #F7F3FA !important;
-  --control-bg: #F7F3FA !important;
-  --surface-bg: #F7F3FA !important;
-  --sidebar-bg: #F7F3FA !important;
-  --navbar-bg: #F7F3FA !important;
-  --form-bg: #F7F3FA !important;
-  --hover-bg: #E9E1EF !important;
+  --bg-color: #f4fde7 !important;
+  --card-bg: #f4fde7 !important;
+  --control-bg: #f4fde7 !important;
+  --surface-bg: #f4fde7 !important;
+  --sidebar-bg: #f4fde7 !important;
+  --navbar-bg: #f4fde7 !important;
+  --form-bg: #f4fde7 !important;
+  --hover-bg: #f4fde7 !important;
 }
 
 /* Everything else also wrapped inside the light-theme condition */
