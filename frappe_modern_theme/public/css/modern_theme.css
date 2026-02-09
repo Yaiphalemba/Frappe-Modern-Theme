@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
 /* Apply ONLY when light theme is active */
 :root[data-theme="light"] {
 
@@ -12,8 +14,12 @@
   --hover-bg: #e0ffdb !important;
 }
 
-/* Everything else also wrapped inside the light-theme condition */
+/* Everything wrapped inside the light-theme condition */
 [data-theme="light"] {
+  /* --- Typography --- */
+  body, input, button, select, textarea {
+    font-family: 'Nunito', sans-serif !important;
+  }
   /* Global fallback */
   html,
   body {
@@ -55,6 +61,7 @@
   .modal-content,
   .list-group-item,
   .comment-box,
+  .popover-body,
   .web-form-wrapper,
   .page-head,
   header,
@@ -112,7 +119,6 @@
   .card:hover,
   .widget:hover,
   .list-group-item:hover,
-  .dropdown-item:hover,
   .desk-sidebar-item:hover,
   .recent-item:hover,
   .awesomplete ul li:hover {
@@ -120,5 +126,88 @@
   }
   .form-control:hover {
     background-color: var(--hover-bg) !important;
+  }
+
+/* --- Interactive Animations --- */
+  .list-row, 
+  .desk-sidebar-item, 
+  .widget, 
+  .card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    margin-bottom: 6px;
+  }
+
+  /* Hover Lift Effect */
+  .list-row:hover, 
+  .desk-sidebar-item:hover, 
+  .widget:hover, 
+  .card:hover,
+  .recent-item:hover {
+    transform: translateY(-3px) scale(1.005);
+    background-color: var(--hover-white) !important;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1) !important;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .widget.shortcut.edit-mode:hover {
+    transform: none !important;       /* No movement */
+    box-shadow: none !important;      /* No massive shadow */
+    cursor: default !important;       /* Normal arrow cursor, not the 'pointer' hand */
+    z-index: 1 !important;            /* Don't pop on top of other things */
+  }
+
+  .btn-primary {
+      background: #2f855a !important;
+      background-color: #2f855a !important; 
+      color: #ffffff !important; /* White text */
+      border: 1px solid #276749 !important;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  }
+
+  .btn-primary:hover {
+      background-color: #276749 !important; /* Darker on hover */
+      transform: translateY(-1px);
+  }
+  
+  .btn-primary:active {
+    transform: scale(0.95);
+  }
+
+  /* --- Utility Cleanups --- */
+  .list-row-container, 
+  .grid-row {
+    border-bottom: 1px solid rgba(0,0,0,0.05) !important;
+  }
+  
+  .graph-svg-tip {
+     background: #e0ffdb !important;
+     color: #ffffff !important; /* White text */
+     backdrop-filter: blur(4px);
+  }
+
+  .dropdown-menu,
+  .dropdown-list,
+  .popover,
+  .awesomplete > ul {
+    background-color: #e0ffdb !important;
+    border: 1px solid #c6f6d5 !important; /* Subtle green border */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    border-radius: 12px !important;
+    z-index: 1000 !important; /* Ensure it appears above other elements */
+  }
+
+  /* Fix the text color inside dropdowns if they are washing out */
+  .dropdown-item,
+  .popover-body,
+  .awesomplete > ul > li {
+      color: #2d3748 !important;
+  }
+
+  .dropdown-item:hover,
+  .awesomplete > ul > li:hover,
+  .awesomplete > ul > li[aria-selected="true"] {
+      background-color: #2f855a !important; /* Highlight with your theme color */
+      color: #ffffff !important; /* White text */
   }
 }
