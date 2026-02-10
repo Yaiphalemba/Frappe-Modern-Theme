@@ -210,4 +210,14 @@
       background-color: #2f855a !important; /* Highlight with your theme color */
       color: #ffffff !important; /* White text */
   }
+
+  /* 2. Force the ANCHOR (link), SPAN, and BOLD text to be WHITE */
+  .awesomplete > ul > li:hover a,
+  .awesomplete > ul > li[aria-selected="true"] a,
+  .awesomplete > ul > li:hover a span,
+  .awesomplete > ul > li[aria-selected="true"] a span,
+  .awesomplete > ul > li:hover a b,
+  .awesomplete > ul > li[aria-selected="true"] a b {
+      color: #ffffff !important;
+  }
 }
