@@ -1,7 +1,13 @@
 # Frappe Modern Theme
 
 > A minimal, modern UI theme for Frappe/ERPNext featuring a clean green-tinted palette, smooth animations, and polished interactive elements.
+---
+## Screenshots:
 
+1. ![alt text](<2 SC.PNG>)
+2. ![alt text](<4 SC.PNG>)
+3. ![alt text](<1 SC.PNG>)
+4. ![alt text](<3 SC.PNG>)
 ---
 
 ## Table of Contents
